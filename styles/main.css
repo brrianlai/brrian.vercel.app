@@ -1,0 +1,15 @@
+body {
+	color: var(--dark-87);
+	cursor: default;
+}
+
+/* header, footer */
+
+header, footer {
+	align-items: center;
+	display: flex;
+	gap: 1.6rem;
+	height: var(--header-height);
+	justify-content: space-between;
+	padding: var(--padding-wrap);
+}
