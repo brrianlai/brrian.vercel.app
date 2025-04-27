@@ -3,7 +3,6 @@
 	"homepage": ".",
 	"dependencies": {
 		"-": "^0.0.1",
-		"@next/font": "^13.4.3",
 		"@vercel/analytics": "^1.0.1",
 		"framer-motion": "^10.12.12",
 		"next": "^15.3.1",
