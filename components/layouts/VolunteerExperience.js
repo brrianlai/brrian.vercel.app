@@ -25,8 +25,7 @@ const VolunteerExperience = () => {
 
 				{volunteerList.map((volunteer, index) => (
 					<motion.div
-						className='column'
-						data-gap='smaller'
+						className='column gap-smaller'
 						initial='hidden'
 						key={index}
 						variants={item}
@@ -34,7 +33,7 @@ const VolunteerExperience = () => {
 						whileInView='show'
 					>
 						<h5>{volunteer.name}</h5>
-						<div className='row' data-gap='small'>
+						<div className='row gap-small'>
 							{volunteer.tags.map((tag, index) => (
 								<h6 key={index}>{tag}</h6>
 							))}

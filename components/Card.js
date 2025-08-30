@@ -22,7 +22,7 @@ const Card = ({ image, title, tags, sizes, link }) => {
 				<div className='card-content'>
 					<h5>{title}</h5>
 					{tags &&
-						<div className='row' data-gap='smaller'>
+						<div className='row gap-smaller'>
 							{tags.map((tag, index) => (
 								<Tag key={index}>{tag}</Tag>
 							))}

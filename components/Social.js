@@ -15,7 +15,7 @@ const icons = [
 
 const Social = () => {
 	return (
-		<div className='social row' data-gap='smaller'>
+		<div className='row gap-smaller'>
 			{icons.map((icon, index) => (
 				<a href={icon.link} key={index} className='icon' target='_blank' alt={icon.name} aria-label={icon.name}>
 					{icon.icon}

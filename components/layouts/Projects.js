@@ -47,7 +47,7 @@ const Projects = () => {
 		<section>
 			<h4>Projects</h4>
 			
-			<div className='grid' data-columns='3'>
+			<div className='grid columns-3'>
 				{projects.map((project) => (
 					<motion.div
 						initial='hidden'

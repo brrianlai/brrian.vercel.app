@@ -92,13 +92,13 @@ const Header = () => {
 
 				<motion.div className='column nav-body'>
 					{navItems.map((navItem, index) => (
-						<motion.a
-							href={navItem.link}
+						<motion.h4
 							key={index}
-							variants={item}
-						>
-							<h4>{navItem.name}</h4>
-						</motion.a>
+							variants={item}>
+							<a href={navItem.link}>
+								{navItem.name}
+							</a>
+						</motion.h4>
 					))}
 				</motion.div>
 				

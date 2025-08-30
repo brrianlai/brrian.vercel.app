@@ -1,6 +1,6 @@
-const backgrounds = ['dark','light','black','white','clay','yellow','mint','purple','tan','brown','red','green','blue','clear']
-const shapes = ['square','rounded','round']
-const sizes = ['small','large']
+const backgrounds = ['dark', 'light', 'black',' white', 'clear']
+const shapes = ['square', 'rounded', 'round']
+const sizes = ['small', 'large']
 
 const checkValue = (value, allowed, defaultValue) =>
 	allowed.includes(value) ? value : defaultValue
@@ -18,16 +18,16 @@ const Button = ({
 	const checkBackground = checkValue(background, backgrounds, 'dark')
 	const checkShape = checkValue(shape, shapes, 'square')
 	const checkSize = checkValue(size, sizes, 'small')
-	const checkOutline = outline ? 'true' : 'false'
+	const checkOutline = outline ? 'outline' : ''
+
+	const classNames = ['button', checkBackground, checkShape, checkSize, checkOutline]
+    	.filter(Boolean)
+   		.join(' ')
 
 	return (
 		<a
 			href={link}
-			className='button'
-			data-background={checkBackground}
-			data-shape={checkShape}
-			data-size={checkSize}
-			data-outline={checkOutline}
+			className={classNames}
 		>
 			{iconLeft && <span className="icon-left">{iconLeft}</span>}
 			{children}

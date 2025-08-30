@@ -33,8 +33,7 @@ const WorkExperience = () => {
 				{workList.map((work, index) => (
 
 					<motion.div
-						className='column'
-						data-gap='smaller'
+						className='column gap-smaller'
 						initial='hidden'
 						key={index}
 						variants={item}
@@ -42,7 +41,7 @@ const WorkExperience = () => {
 						whileInView='show'
 					>
 						<h5>{work.name}</h5>
-						<div className='row' data-gap='small'>
+						<div className='row gap-small'>
 							{work.tags.map((tag, index) => (
 								<h6 key={index}>{tag}</h6>
 							))}

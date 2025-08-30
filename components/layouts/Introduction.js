@@ -10,7 +10,7 @@ import { RiMailLine } from 'react-icons/ri'
 
 const Introduction = () => {
 	return (
-		<section className='introduction background-waves' data-align='center'>
+		<section className='introduction background-waves'>
 			<motion.div
 				className='column'
 				initial='hidden'
@@ -19,7 +19,7 @@ const Introduction = () => {
 			>
 				<h3>BSc Biology from UBC</h3>
 
-				<motion.div className='row' variants={item} data-gap='small'>
+				<motion.div variants={item}>
 					<Button link='mailto:laibrian@student.ubc.ca' shape='round' size='large' background='light' outline='true'>
 						<div className='icon'>
 							<RiMailLine />

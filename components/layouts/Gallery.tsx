@@ -32,8 +32,8 @@ const container = {
 
 export default function Gallery() {
 	return (
-		<section className="gallery">
-			<div className="column">
+		<section className='gallery'>
+			<div className='column'>
 				{galleryColumn1.map((image, index) => (
 					<motion.div
 						className='gallery-photo'
@@ -47,7 +47,7 @@ export default function Gallery() {
 					</motion.div>
 				))}
 			</div>
-			<div className="column">
+			<div className='column'>
 				{galleryColumn2.map((image, index) => (
 					<motion.div
 						className='gallery-photo'
