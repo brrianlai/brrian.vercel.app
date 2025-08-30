@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { motion } from 'framer-motion'
+import { motion, cubicBezier } from 'framer-motion'
 
 import img3461 from '../../src/gallery/IMG_3461.jpeg'
 import img6432 from '../../src/gallery/IMG_6432.jpg'
@@ -25,7 +25,7 @@ const container = {
 		transition: {
 			duration: 0.5,
 			delay: 0.3,
-			ease: [0.465, 0.183, 0.153, 0.946]
+			ease: cubicBezier(0.465, 0.183, 0.153, 0.946)
 		}
 	}
 }

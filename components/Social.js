@@ -1,4 +1,4 @@
-import { RiGithubFill, RiLinkedinFill, RiInstagramLine } from 'react-icons/ri'
+import { RiGithubFill, RiInstagramLine } from 'react-icons/ri'
 
 const icons = [
 	{

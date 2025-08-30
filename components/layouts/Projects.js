@@ -1,7 +1,7 @@
 'use client'
 
 import Card from '../Card'
-import { motion } from 'framer-motion'
+import { motion, cubicBezier } from 'framer-motion'
 
 import apollo from '../../src/projects/apollo.png'
 import instagram from '../../src/projects/instagram.png'
@@ -37,7 +37,7 @@ const item = {
 		y: 0,
 		transition: {
 			duration: 0.6,
-			ease: [0.465, 0.183, 0.153, 0.946]
+			ease: cubicBezier(0.465, 0.183, 0.153, 0.946)
 		}
 	}
 }

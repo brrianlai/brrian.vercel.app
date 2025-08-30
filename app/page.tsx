@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion, cubicBezier } from 'framer-motion'
 import dynamic from 'next/dynamic'
 
 import Background from '../components/layouts/Background'
@@ -26,7 +26,7 @@ const container = {
 		y: 0,
 		transition: {
 			duration: 0.5,
-			ease: [0.465, 0.183, 0.153, 0.946],
+			ease: cubicBezier(0.465, 0.183, 0.153, 0.946),
 		}
 	}
 }

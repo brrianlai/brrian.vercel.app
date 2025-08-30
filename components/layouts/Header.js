@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion, cubicBezier } from 'framer-motion'
 
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri'
 
@@ -38,7 +38,7 @@ const variants = {
 		transition: {
 			delayChildren: 0.3,
 			duration: 0.6,
-			ease: [0.465, 0.183, 0.153, 0.946],
+			ease: cubicBezier(0.465, 0.183, 0.153, 0.946),
 			staggerChildren: 0.08
 		},
 		y: 0
@@ -47,7 +47,7 @@ const variants = {
 		opacity: 0,
 		transition: {
 			duration: 0.4,
-			ease: [0.465, 0.183, 0.153, 0.946]
+			ease: cubicBezier(0.465, 0.183, 0.153, 0.946)
 		},
 		y: '120%'
 	}

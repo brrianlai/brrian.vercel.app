@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion, cubicBezier } from 'framer-motion'
 
 const container = {
 	hidden: {
@@ -13,7 +13,7 @@ const container = {
 		transition: {
 			duration: 0.5,
 			delay: 0.3,
-			ease: [0.465, 0.183, 0.153, 0.946]
+			ease: cubicBezier(0.465, 0.183, 0.153, 0.946)
 		}
 	}
 }
