@@ -35,7 +35,7 @@ const Introduction = () => {
 
 			<div className='column'>
 				<div className='profile'>
-					<Image src={profilePhoto} sizes='(max-width: 960px) 180px, 280px' priority quality='90' alt='Profile photo'/>
+					<Image src={profilePhoto} sizes='(max-width: 960px) 18rem, 28rem' priority quality='90' alt='Profile photo'/>
 				</div>
 			</div>
 		</section>
