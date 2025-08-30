@@ -1,4 +1,6 @@
-import { motion } from 'framer-motion'
+'use client'
+
+import { motion, cubicBezier } from 'framer-motion'
 
 const Education = () => {
 	return (
@@ -39,7 +41,7 @@ const item = {
 		opacity: 1,
 		transition: {
 			duration: 0.5,
-			ease: [0.465, 0.183, 0.153, 0.946]
+			ease: cubicBezier(0.465, 0.183, 0.153, 0.946)
 		},
 		y: 0
 	}

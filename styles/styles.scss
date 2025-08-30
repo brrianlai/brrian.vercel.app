@@ -387,7 +387,11 @@ section[data-size='large'] {
 	height: 4rem;
 	justify-content: center;
 	padding: 0 2rem;
-	transition: var(--transition-background);
+	transition: var(--transition-background), var(--transition-size);
+
+	&:hover {
+		transform: scale(1.02);
+	}
 
 	/* shape */
 
@@ -480,11 +484,11 @@ section[data-size='large'] {
 
 	&[data-outline='true'] {
 		border: 0.2rem solid var(--dark-6);
-		transition: var(--transition-border);
+		transition: var(--transition-border), var(--transition-size);
 
 		&:hover {
 			border: 0.2rem solid var(--dark-24);
-			transition: var(--transition-border);
+			transition: var(--transition-border), var(--transition-size);
 		}
 	}
 
@@ -607,6 +611,7 @@ section {
 	--transition-border: border 0.2s ease;
 	--transition-color: color 0.2s ease;
 	--transition-fill: fill 0.2s ease;
+	--transition-size: transform 0.4s cubic-bezier(0.465, 0.183, 0.153, 0.946);
 	--transition-transform: transform 0.4s ease;
 
 	/* padding */
