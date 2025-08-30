@@ -34,7 +34,7 @@ const container = {
 export default function Page() {
 	return (
 		<div>
-			<motion.div animate='show' initial='hidden' viewport={{ once: true }} variants={container}>
+			<motion.div initial='hidden' animate='show' viewport={{ once: true }} variants={container}>
 				<Introduction />
 				<Background />
 			</motion.div>

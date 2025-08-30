@@ -1,32 +1,24 @@
-const backgrounds = [
-	'dark',
-	'light',
-	'black',
-	'white',
-	'clay',
-	'yellow',
-	'mint',
-	'purple',
-	'tan',
-	'brown',
-	'red',
-	'green',
-	'blue',
-	'purple',
-	'clear'
-]
+const backgrounds = ['dark','light','black','white','clay','yellow','mint','purple','tan','brown','red','green','blue','clear']
+const shapes = ['square','rounded','round']
+const sizes = ['small','large']
 
-const shapes = ['square', 'rounded', 'round']
+const checkValue = (value, allowed, defaultValue) =>
+	allowed.includes(value) ? value : defaultValue
 
-const sizes = ['small', 'large']
-
-const outlines = ['false', 'true']
-
-const Button = ({ children, link, background, shape, size, outline, iconLeft, iconRight }) => {
-	const checkBackground = backgrounds.includes(background) ? background : backgrounds[0]
-	const checkShape = shapes.includes(shape) ? shape : shapes[0]
-	const checkSize = sizes.includes(size) ? size : sizes[0]
-	const checkOutline = outlines.includes(outline) ? outline : outlines[0]
+const Button = ({
+	children,
+	link = '#',
+	background = 'dark',
+	shape = 'square',
+	size = 'small',
+	outline = false,
+	iconLeft,
+	iconRight
+}) => {
+	const checkBackground = checkValue(background, backgrounds, 'dark')
+	const checkShape = checkValue(shape, shapes, 'square')
+	const checkSize = checkValue(size, sizes, 'small')
+	const checkOutline = outline ? 'true' : 'false'
 
 	return (
 		<a
@@ -37,11 +29,11 @@ const Button = ({ children, link, background, shape, size, outline, iconLeft, ic
 			data-size={checkSize}
 			data-outline={checkOutline}
 		>
-
-		{children}
-
+			{iconLeft && <span className="icon-left">{iconLeft}</span>}
+			{children}
+			{iconRight && <span className="icon-right">{iconRight}</span>}
 		</a>
-	);
+  )
 }
 
 export default Button

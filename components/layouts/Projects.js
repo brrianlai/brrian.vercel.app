@@ -48,34 +48,21 @@ const Projects = () => {
 			<h4>Projects</h4>
 			
 			<div className='grid' data-columns='3'>
-				{projects.map((project, index) => (
+				{projects.map((project) => (
 					<motion.div
 						initial='hidden'
-						key={index}
+						key={project.name}
 						variants={item}
 						viewport={{ once: true }}
 						whileInView='show'
 					>
-						{(project.link) ?
-							<Card
-								title={project.name}
-								tags={project.tags}
-								image={project.preview}
-								height={project.height}
-								width={project.width}
-								sizes='(max-width: 960px) 100vw, 33vw'
-								link={project.link}
-							/>
-						: 
-							<Card
-								title={project.name}
-								tags={project.tags}
-								image={project.preview}
-								height={project.height}
-								width={project.width}
-								sizes='(max-width: 960px) 100vw, 33vw'
-							/>
-						}
+						<Card
+							title={project.name}
+							tags={project.tags}
+							image={project.preview}
+							sizes='(max-width: 960px) 100vw, 33vw'
+							{...(project.link && { link: project.link })}
+						/>
 					</motion.div>
 				))}
 			</div>
