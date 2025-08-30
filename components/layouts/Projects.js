@@ -1,37 +1,29 @@
+'use client'
+
 import Card from '../Card'
 import { motion } from 'framer-motion'
+
+import apollo from '../../src/projects/apollo.png'
+import instagram from '../../src/projects/instagram.png'
+import vsco from '../../src/projects/vsco.png'
 
 const projects = [
 	{
 		name: 'Apollo app redesign',
 		tags: ['Figma', 'iOS'],
-		preview: '/projects/apollo.png',
-		height: '1800',
-		width: '2400'
+		preview: apollo,
 	},
 	{
 		name: 'Instagram app redesign',
 		tags: ['Figma', 'iOS'],
-		preview: '/projects/instagram.png',
-		height: '1800',
-		width: '2400',
+		preview: instagram,
 		link: 'https://www.figma.com/file/2hqVyvyJ8fHN0GHyGtSmBl/Instagram?node-id=0%3A1'
 	},
 	{
 		name: 'VSCO app redesign',
 		tags: ['Figma', 'iOS'],
-		preview: '/projects/vsco.png',
-		height: '1800',
-		width: '2400',
+		preview: vsco,
 		link: 'https://www.figma.com/file/Vv281R8FFQ59r8wXaEzbOh/VSCO?node-id=0%3A1'
-	},
-	{
-		name: 'Personal website',
-		tags: ['React', 'Next.js', 'Vercel', 'Responsive', 'Dark mode'],
-		preview: '/projects/site.png',
-		height: '1800',
-		width: '2400',
-		link: 'https://github.com/brrianlai/brrian.vercel.app'
 	}
 ]
 

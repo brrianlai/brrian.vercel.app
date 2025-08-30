@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect } from 'react'
 import { RiArrowUpLine } from 'react-icons/ri'
 import smoothscroll from 'smoothscroll-polyfill'

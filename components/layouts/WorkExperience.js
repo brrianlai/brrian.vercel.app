@@ -3,8 +3,12 @@ import { motion } from 'framer-motion'
 const workList = [
 	{
 		name: 'Canada Border Services Agency (CBSA)',
-		tags: ['May 2023 to present', 'a/Executive Assistant'],
-		description: 'Act as the Executive Assistant to the Director.'
+		tags: ['May 2023 to present', 'Executive Assistant'],
+		description: 'Executive Assistant to the Director.'
+	},
+	{
+		tags: ['Jun 2025 to Oct 2025', 'A/Resource Management Supervisor'],
+		description: 'Acted as the Resource Management Supervisor for the division.'
 	},
 	{
 		tags: ['Oct 2022 to May 2023', 'Administrative Assistant'],

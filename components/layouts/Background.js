@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import backgroundPhoto from '../../public/background.jpg'
+import backgroundPhoto from '../../src/background.jpg'
 
 const Background = () => {
 	return (

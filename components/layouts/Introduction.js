@@ -1,10 +1,12 @@
+'use client'
+
 import Image from 'next/image'
 import Button from '../Button'
 import { motion } from 'framer-motion'
 import Social from '../Social'
-import profilePhoto from '../../public/profile2.png'
+import profilePhoto from '../../src/profile.png'
 
-import { RiArrowRightLine, RiMailLine } from 'react-icons/ri'
+import { RiMailLine } from 'react-icons/ri'
 
 const Introduction = () => {
 	return (
@@ -15,7 +17,7 @@ const Introduction = () => {
 				animate='show'
 				variants={container}
 			>
-				<h3>Biology undergraduate student from UBC with an interest in web and app design</h3>
+				<h3>BSc Biology from UBC</h3>
 
 				<motion.div className='row' variants={item} data-gap='small'>
 					<Button link='mailto:laibrian@student.ubc.ca' shape='round' size='large' background='light' outline='true'>
@@ -33,7 +35,7 @@ const Introduction = () => {
 
 			<div className='column'>
 				<div className='profile'>
-					<Image src={profilePhoto} sizes='(max-width: 960px) 180px, 280px' priority quality='100' alt='Profile photo'/>
+					<Image src={profilePhoto} sizes='(max-width: 960px) 180px, 280px' priority quality='90' alt='Profile photo'/>
 				</div>
 			</div>
 		</section>

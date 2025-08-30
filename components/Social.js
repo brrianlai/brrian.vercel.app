@@ -7,11 +7,6 @@ const icons = [
 		icon: <RiGithubFill />
 	},
 	{
-		name: 'LinkedIn',
-		link: 'https://www.linkedin.com/in/brian-lai-8989b91aa/',
-		icon: <RiLinkedinFill />
-	},
-	{
 		name: 'Instagram',
 		link: 'https://instagram.com/brrianlai',
 		icon: <RiInstagramLine />

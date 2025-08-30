@@ -4,12 +4,12 @@ const volunteerList = [
 	{
 		name: 'Vancouver Coastal Health',
 		tags: ['Aug 2019 to Mar 2020', 'Social Recreation Volunteer'],
-		description: 'Engaged in social activities with residents that have dementia to improve cognitive abilities. Developed interpersonal skills and formed insightful connections with residents.'
+		description: 'Led group activities with dementia residents, strengthening communication skills and building meaninful connections.'
 	},
 	{
 		name: 'UBC Faculty of Education',
 		tags: ['May 2019 to Aug 2019', 'Cultural Ambassador'],
-		description: 'Led social and recreational activities for 250+ international undergraduate students. Assisted in organizing plans for upcoming activities with program coordinators.'
+		description: 'Led social and recreational activities for 250+ international undergraduate students and supported program coordinators in planning future activities.'
 	}
 ]
 
