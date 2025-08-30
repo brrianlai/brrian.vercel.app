@@ -1,0 +1,66 @@
+@use '../abstracts/mixins' as *;
+@use '../layouts/layout' as *;
+
+$button-bg: (
+	white: (bg: var(--white-100), color: var(--black-100), hover: var(--white-60)),
+	black: (bg: var(--black-100), color: var(--white-100), hover: var(--black-60)),
+	light: (bg: var(--light-100), color: var(--dark-100), hover: var(--light-60)),
+	dark:  (bg: var(--dark-100), color: var(--light-100), hover: var(--dark-60))
+);
+
+$button-sizes: (
+	small: (font-size: 1.2rem, height: 3rem, padding: 1.6rem),
+	medium: (font-size: 1.4rem, height: 4rem, padding: 2rem),
+	large: (font-size: 1.6rem, height: 6rem, padding: 3rem)
+);
+
+.button {
+	@include flex(row, nowrap, center, center, 1.4rem);
+
+	cursor: pointer;
+	font-weight: 500;
+	backdrop-filter: blur(20px);
+	transition: var(--transition-background), var(--transition-border), var(--transition-size);
+
+	&:hover {
+		transform: scale(1.02);
+	}
+
+	&.round {
+		border-radius: 3rem;
+	}
+	
+	&.rounded {
+		border-radius: 0.4rem;
+	}
+	
+	&.outline {
+		border: 0.2rem solid var(--dark-6);
+	
+		&:hover {
+			border-color: var(--dark-24);
+		}
+	}
+
+	.icon {
+		margin: -1.6rem;
+	}
+}
+
+@each $size, $vals in $button-sizes {
+	.button.#{$size} {
+		font-size: map-get($vals, font-size);
+		height: map-get($vals, height);
+		padding: 0 map-get($vals, padding);
+	}
+}
+	
+@each $name, $vals in $button-bg {
+	.button.#{$name} {
+		background: map-get($vals, bg);
+		color: map-get($vals, color);
+
+		&:hover { background: map-get($vals, hover); }
+			.icon { color: map-get($vals, color); }
+		}
+}

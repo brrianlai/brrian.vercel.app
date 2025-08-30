@@ -1,0 +1,29 @@
+@use '../abstracts/mixins' as *;
+
+nav {
+	@include flex(column, nowrap, flex-start, space-between, var(--gap-width-default));
+	background: var(--background-color);
+	display: none;
+	height: 100vh;
+	height: -webkit-fill-available;
+	padding: var(--wrap-padding);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+
+	& .nav-body {
+		flex-wrap: nowrap;
+	}
+
+	& .nav-footer {
+		align-items: center;
+		height: var(--header-height);
+	}
+
+	& .nav-heading {
+		align-items: center;
+		justify-content: flex-end;
+		height: var(--header-height);
+	}
+}

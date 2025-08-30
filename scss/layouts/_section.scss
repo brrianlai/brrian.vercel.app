@@ -1,0 +1,51 @@
+@use '../abstracts/mixins' as *;
+
+$layouts: (
+	center: (align: center, text: center),
+	right: (align: flex-end, text: right),
+	justified: (align: space-between, text: left)
+);
+
+section {
+	@include flex(column, nowrap, flex-start, flex-start, var(--gap-width-default));
+	padding: var(--section-padding);
+	width: 100%;
+  
+	&.large {
+		padding: var(--section-padding-large);
+	}
+
+	&.offset {
+		width: 67vw;
+	}
+
+	&.offset-right {
+		margin-left: auto;
+	}
+
+	@each $name, $vals in $layouts {
+		&.#{$name}, &.#{$name} .column {
+			align-items: map-get($vals, align);
+			text-align: map-get($vals, text);
+		}
+	}
+
+	&.introduction {
+		@include flex(row, nowrap, center, space-between, 4rem);
+
+		.column {
+			width: auto;
+		}
+	}
+}
+
+.profile {
+	height: var(--profile-size);
+	width: var(--profile-size);
+	position: relative;
+
+	& img {
+		border-radius: 50%;
+		height: 100%;
+		width: 100%; }
+}

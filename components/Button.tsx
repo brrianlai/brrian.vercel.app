@@ -1,6 +1,6 @@
 const backgrounds = ['dark', 'light', 'black',' white', 'clear']
 const shapes = ['square', 'rounded', 'round']
-const sizes = ['small', 'large']
+const sizes = ['small', 'medium', 'large']
 
 const checkValue = (value, allowed, defaultValue) =>
 	allowed.includes(value) ? value : defaultValue

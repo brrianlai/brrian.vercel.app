@@ -1,0 +1,33 @@
+@media (prefers-color-scheme: dark) {
+	:root {
+		// swap dark and light roles
+		--dark-100: rgba(var(--color-white), var(--opacity-100));
+		--dark-87: rgba(var(--color-white), var(--opacity-87));
+		--dark-60: rgba(var(--color-white), var(--opacity-60));
+		--dark-38: rgba(var(--color-white), var(--opacity-38));
+		--dark-24: rgba(var(--color-white), var(--opacity-24));
+		--dark-12: rgba(var(--color-white), var(--opacity-12));
+		--dark-6: rgba(var(--color-white), var(--opacity-6));
+
+		--light-100: rgba(var(--color-black), var(--opacity-100));
+		--light-87: rgba(var(--color-black), var(--opacity-87));
+		--light-60: rgba(var(--color-black), var(--opacity-60));
+		--light-38: rgba(var(--color-black), var(--opacity-38));
+		--light-24: rgba(var(--color-black), var(--opacity-24));
+		--light-12: rgba(var(--color-black), var(--opacity-12));
+		--light-6: rgba(var(--color-black), var(--opacity-6));
+
+		// background
+		--background-card: var(--dark-6);
+		--background-card-hover: var(--dark-12);
+	}
+
+	.card {
+		box-shadow: none;
+	}
+
+	.tag {
+		background-color: var(--dark-6);
+
+	}
+}

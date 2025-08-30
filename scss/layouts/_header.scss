@@ -1,0 +1,20 @@
+@use '../abstracts/mixins' as *;
+
+header, footer {
+	@include flex(row, nowrap, center, space-between, 1.6rem);
+	height: var(--header-height);
+	padding: var(--wrap-padding);
+	width: 100%;
+}
+
+header {
+	background: var(--light-87);
+	backdrop-filter: blur(50px);
+	position: sticky;
+	top: 0;
+	transition: var(--transition-transform);
+	z-index: 2;
+
+	&.hidden { transform: translateY(-100%); }
+	& .icon-menu { display: none; cursor: pointer; }
+}

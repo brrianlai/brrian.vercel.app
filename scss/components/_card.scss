@@ -1,0 +1,45 @@
+@use '../abstracts/mixins' as *;
+
+.card {
+	@include flex(column);
+	background: var(--background-card);
+	background-clip: padding-box;
+	border-radius: 2rem;
+	box-shadow: 0 0 0 0.1rem var(--dark-12) inset;
+	gap: var(--gap-width-none);
+	transition: var(--transition-background), var(--transition-size);
+  
+	&:hover {
+		background: var(--background-card-hover);
+		transform: scale(1.01);
+	}
+
+	a {
+		display: inline-block;
+	}
+
+	img {
+		border-radius: 2rem 2rem 0 0;
+		height: auto;
+		width: 100%;
+	}
+
+	.card-content {
+		@include flex(column);
+		gap: var(--gap-width-smaller);
+		padding: 2rem;
+	}
+}
+
+.icon {
+	&.icon-card-link {
+		color: var(--dark-38);
+		height: 3.4rem;
+		padding: 0.7rem;
+		width: 3.4rem;
+
+		&:hover {
+			color: var(--dark-87);
+		}
+	}
+	}

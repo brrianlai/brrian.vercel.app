@@ -1,0 +1,15 @@
+@mixin flex($direction: row, $wrap: wrap, $align: flex-start, $justify: flex-start, $gap: var(--gap-width-default)) {
+	display: flex;
+	flex-direction: $direction;
+	flex-wrap: $wrap;
+	align-items: $align;
+	justify-content: $justify;
+	gap: $gap;
+}
+
+@mixin heading($font-size, $line-height, $weight: 500) {
+	font-size: $font-size;
+	line-height: $line-height;
+	font-weight: $weight;
+	overflow-wrap: break-word;
+}
