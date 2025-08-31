@@ -28,7 +28,7 @@ const WorkExperience = () => {
 
 			<h4>Work Experience</h4>
 
-			<div className='grid' data-columns='3'>
+			<div className='grid columns-3'>
 
 				{workList.map((work, index) => (
 

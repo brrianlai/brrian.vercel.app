@@ -21,7 +21,7 @@ const VolunteerExperience = () => {
 
 			<h4>Volunteer Experience</h4>
 
-			<div className='grid' data-columns='3'>
+			<div className='grid columns-3'>
 
 				{volunteerList.map((volunteer, index) => (
 					<motion.div
