@@ -2,7 +2,8 @@
 
 nav {
 	@include flex(column, nowrap, flex-start, space-between, var(--gap-width-default));
-	background: var(--background-color);
+	backdrop-filter: var(--blur);
+	background: var(--light-87);
 	display: none;
 	height: 100vh;
 	height: -webkit-fill-available;

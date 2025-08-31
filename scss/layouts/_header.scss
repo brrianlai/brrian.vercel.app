@@ -9,12 +9,18 @@ header, footer {
 
 header {
 	background: var(--light-87);
-	backdrop-filter: blur(50px);
+	backdrop-filter: var(--blur);
 	position: sticky;
 	top: 0;
 	transition: var(--transition-transform);
 	z-index: 2;
 
-	&.hidden { transform: translateY(-100%); }
-	& .icon-menu { display: none; cursor: pointer; }
+	&.hidden {
+		transform: translateY(-100%);
+	}
+
+	 .icon-menu {
+		display: none;
+		cursor: pointer;
+	}
 }

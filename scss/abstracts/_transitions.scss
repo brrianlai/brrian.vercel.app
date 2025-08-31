@@ -8,7 +8,6 @@ $transitions: (
 );
 
 :root {
-	// transitions
 	@each $name, $val in $transitions {
 		--transition-#{$name}: #{$val};
 	}
