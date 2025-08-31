@@ -90,7 +90,7 @@ const Header = () => {
 					</div>
 				</div>
 
-				<motion.div className='column nav-body'>
+				<div className='column'>
 					{navItems.map((navItem, index) => (
 						<motion.h4
 							key={index}
@@ -100,7 +100,7 @@ const Header = () => {
 							</a>
 						</motion.h4>
 					))}
-				</motion.div>
+				</div>
 				
 				<motion.div
 					className='row nav-footer'

@@ -12,18 +12,14 @@ nav {
 	width: 100%;
 	z-index: 3;
 
-	& .nav-body {
-		flex-wrap: nowrap;
-	}
-
-	& .nav-footer {
+	.nav-footer {
 		align-items: center;
 		height: var(--header-height);
 	}
 
-	& .nav-heading {
+	.nav-heading {
 		align-items: center;
-		justify-content: flex-end;
+		align-self: flex-end;
 		height: var(--header-height);
 	}
 }
