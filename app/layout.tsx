@@ -5,8 +5,11 @@ import { Inter } from "next/font/google"
 
 import '../scss/main.scss'
 
+import dynamic from 'next/dynamic'
+
 import Header from '../components/layouts/Header'
-import Footer from '../components/layouts/Footer'
+
+const Footer = dynamic(() => import('../components/layouts/Footer'))
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' })
 
