@@ -14,3 +14,10 @@ export const fadeUpItem = {
 		}
 	}
 }
+
+export const staggerContainer = (staggerChildren = 0.1, delayChildren = 0) => ({
+	hidden: {},
+	show: {
+		transition: { staggerChildren, delayChildren }
+	}
+})

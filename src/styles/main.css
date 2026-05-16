@@ -45,7 +45,11 @@
 		--background-color: var(--surface);
 		--background-card: var(--surface);
 		--background-card-hover: var(--light-87);
-		--blur: blur(50px);
+
+		/* Blur radii */
+		--blur-radius: 3.125rem;       /* 50px — nav/header */
+		--blur-radius-button: 1.25rem; /* 20px — button hairlines */
+		--blur: blur(var(--blur-radius));
 
 		/* Spacing */
 		--gap-width-none: 0;
@@ -187,7 +191,7 @@
 		gap: 0.875rem;
 		cursor: pointer;
 		font-weight: 500;
-		backdrop-filter: blur(20px);
+		backdrop-filter: blur(var(--blur-radius-button));
 		transition: var(--transition-background), var(--transition-border), var(--transition-size);
 
 		&:hover {

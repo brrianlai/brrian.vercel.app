@@ -1,28 +1,28 @@
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense } from "react";
 
-import Introduction from '../components/layouts/Introduction'
-import Background from '../components/layouts/Background'
+import Introduction from "../components/layouts/Introduction";
+import Background from "../components/layouts/Background";
+import Contact from "../components/layouts/Contact";
+import Education from "../components/layouts/Education";
+import Projects from "../components/layouts/Projects";
+import WorkExperience from "../components/layouts/WorkExperience";
+import VolunteerExperience from "../components/layouts/VolunteerExperience";
 
-const Contact = lazy(() => import('../components/layouts/Contact'))
-const Education = lazy(() => import('../components/layouts/Education'))
-const Projects = lazy(() => import('../components/layouts/Projects'))
-const WorkExperience = lazy(() => import('../components/layouts/WorkExperience'))
-const VolunteerExperience = lazy(() => import('../components/layouts/VolunteerExperience'))
-const Gallery = lazy(() => import('../components/layouts/Gallery'))
+const Gallery = lazy(() => import("../components/layouts/Gallery"));
 
 export function IndexComponent() {
-	return (
-		<div>
-			<Introduction />
-			<Background />
-			<Suspense>
-				<Education />
-				<Projects />
-				<WorkExperience />
-				<VolunteerExperience />
-				<Contact />
-				<Gallery />
-			</Suspense>
-		</div>
-	)
+  return (
+    <div>
+      <Introduction />
+      <Background />
+      <Education />
+      <Projects />
+      <WorkExperience />
+      <VolunteerExperience />
+      <Contact />
+      <Suspense>
+        <Gallery />
+      </Suspense>
+    </div>
+  );
 }

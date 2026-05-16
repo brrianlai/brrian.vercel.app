@@ -9,7 +9,6 @@ export default defineConfig({
 		middlewareMode: false,
 	},
 	build: {
-		target: 'ES2020',
 		outDir: 'dist',
 	},
 	define: {
