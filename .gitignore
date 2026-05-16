@@ -1,9 +1,11 @@
 # folders
 node_modules
 build
+dist
+.tanstack
 
 # misc
 .DS_Store
-.next
-
 .vercel
+.prettierrc
+*.log
